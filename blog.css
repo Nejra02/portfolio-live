@@ -1,0 +1,125 @@
+main{
+	padding-top: 100px;
+	background-color: #2F4F4F;
+	text-align: left;
+	color: white;
+	padding-bottom: 100px;
+	font-family: 'Montserrat',sans-serif;
+	font-size: 20px;
+}
+
+
+.topics{
+	display: flex;
+	width: 100%;
+	height: auto;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 100px;
+
+}
+
+.item{
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.item img{
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+}
+
+.topics div a{
+	color: white;
+	text-align: center;
+	font-size: 20px;
+}
+
+.tema{
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+
+.sadržaj{
+	display: flex;
+	padding-bottom: 20px;
+	flex-direction: column;
+}
+
+.sadržaj ol a li{
+	padding-bottom: 15px;
+	padding-left: 40px;
+	color: #D3D3D3;
+}
+
+.podnaslov{
+	display: flex;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	flex-direction: row;
+	align-items: center;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.podnaslov img{
+	width: 30%;
+	height: 250px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+
+.tekst{
+	text-align: center;
+	font-size: 17px;
+	color: #D3D3D3;
+
+}
+
+
+.sadržaj2{
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+.sadržaj2 tr, td, th, table{
+	border: 2px solid #FFFF00;;
+	padding: 10px;
+	text-align: left;
+}
+
+
+
+.sadržaj2 td a{
+	color: white;
+}
+
+/* RESPONZIVNOST */
+
+@media (max-width: 1350px){ /* slike se deformišu */
+	.podnaslov{
+		flex-direction: column;
+	}
+
+	.podnaslov img, .podnaslov iframe{
+		width: 350px;
+		height: 100%;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+}
+
+@media (max-width: 850px){
+	.item img{
+		width: 150px;
+		height: 150px;
+	}
+}

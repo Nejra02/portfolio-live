@@ -1,0 +1,91 @@
+main{
+	padding: 100px 20px;
+	background-color: beige;
+	text-align: left;
+	color: darkgrey;
+}
+
+p{
+	font-size: 17px;
+	text-align: left;
+}
+
+.paragraf{
+	padding: 50px 20px;
+}
+
+.slike{
+	display: flex;
+	margin: 0 0;
+	justify-content: center;
+	column-gap: 50px;
+	padding-bottom: 50px;
+}
+
+.slike img{
+	width: 500px;
+	height: 500px;
+	padding: 20px;
+	border: 4px solid #FFB6C1;
+}
+
+.slika3{
+	text-align: center;
+}
+
+.slika3 p{
+	text-align: center;
+}
+
+.slika3 img{
+	width: 500px;
+	height: 500px;
+	padding: 20px;
+	border: 4px solid #FFB6C1;
+}
+
+/* RESPONZIVNOST */
+
+@media (max-width: 1500px){
+	.slike{
+		width: 100%;
+		column-gap: 20px;
+	}
+	.slike div img, .slika3 img{
+		width: 300px;
+		height: 300px;
+		padding: 10px;
+		border: 2px solid #FFB6C1;
+	}
+}
+
+@media (max-width: 700px){
+	main{
+		width: 100%;
+		padding: 20px 20px;
+	}
+	h1, .paragraf h3{
+		font-size: 15px;
+	}
+
+	.paragraf{
+		padding: 20px 20px;
+		width: 100%;
+	}
+	.slike{
+		width: 100%;
+		column-gap: 5px;
+	}
+
+	.slike div img, .slika3 img{
+		width: 150px;
+		height: 150px;
+		padding: 5px;
+		border: 2px solid #FFB6C1;
+	}
+
+	.slike p, .slika3 p, p, .paragraf{
+		font-size: 8px;
+	}
+
+}

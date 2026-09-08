@@ -1,0 +1,112 @@
+body{
+	background: whitesmoke;
+}
+
+
+main{
+	margin: 50px auto;
+	text-align: center;
+	color: #145c79;
+}
+
+.item{
+	display: block;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#opis{
+	font-size: 20px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.slike-item{
+	width: 100%;
+	height: 300px;
+	align-content: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.slike-item img{
+	max-width: 400px;
+	height: 100%;
+	border: 2px solid black;
+}
+
+
+
+.paragraf{
+	text-align: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 50px;
+	font-size: 20px;
+}
+
+.paragraf div{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.podparagraf{
+	font-size: 20px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+}
+
+.podparagraf div{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.linkovi{
+	margin-left: 5px;
+	margin-right: 5px;
+	display: flex;
+	gap: 5px;
+}
+
+.box1, .box2{
+	float: center;
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: black;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 15px;
+	background-color: #3c8caa;
+	transition: background-color 0s; 
+}
+
+.box1:hover {
+    background-color: #DC143C; 
+}
+
+.box2:hover {
+    background-color: #145c79;
+}
+
+/* RESPONZIVNOST */
+
+@media (max-width: 1360px){ /* slike se poremete */
+	#brišem{
+	display: none;
+	}
+
+	#nebrišem{
+		width: 350px;
+		height: 250px;
+	}
+
+}
+
+@media (max-width: 760px){
+	.paragraf, .paragraf div, .podparagraf, .podparagraf div, #opis{
+		padding-left: 10px;
+		font-size: 10px;
+	}
+}
